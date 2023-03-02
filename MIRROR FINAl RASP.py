@@ -16,7 +16,7 @@ repull = 0
 sleep = 0
 
 def weather():
-    api_key = "5cb1e254e4ad199e31dd9fd7d079667b"
+    api_key = "yourapikey"
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     city_name = input("Mumbai:")
     complete_url = base_url + "appid=" + api_key + "&q=" + city_name
@@ -91,7 +91,7 @@ while True:
         else:
             sleep = 0
 
-    api = NewsApiClient(api_key='04f8cd2f31004c8d91c8d7bb3c4fda12')
+    api = NewsApiClient(api_key='yourapikey')
 
     #This sequence decrypts the info feed for the script
     headlines = api.get_top_headlines(sources='the-times-of-india')
